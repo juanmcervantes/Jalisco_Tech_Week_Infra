@@ -1,7 +1,7 @@
+import * as React from "react"
 
 
- export default function Navbar() {
-
+function Navbar() {
 
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -36,3 +36,5 @@
      </div>
     )
 }
+
+export default Navbar
