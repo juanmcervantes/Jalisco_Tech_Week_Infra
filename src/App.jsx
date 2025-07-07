@@ -1,13 +1,18 @@
 import * as React from "react"
-import Navbar from "./components/Navbar"
+import MainNavbar from './components/MainNavbar'
+import Footer from './components/Footer'
+import MainHero from './components/MainHero'
+import FormButton from './components/FormButton'
+import Countdown from './components/Countdown'
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <div className="min-h-screen flex items-center justify-center bg-base-200">
-      <button className="btn btn-primary">¡Botón DaisyUI!</button>
-    </div>
+    <MainNavbar/>
+    <MainHero/>
+    <Countdown/>
+    <FormButton/>
+    <Footer/>
     </>
   )
 
