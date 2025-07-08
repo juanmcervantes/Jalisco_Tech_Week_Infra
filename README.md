@@ -1,12 +1,65 @@
-# React + Vite
+# Jalisco Tech Week 🌐
+Sitio web oficial para **Jalisco Tech Week**, un evento que reúne a emprendedores, devs e inversionistas del ecosistema de tecnológico en Guadalajara.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tech Stack
+- **Framework:** [React](https://reactjs.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment:** [Vercel](https://vercel.com/)
+- **Custom Domain:** https://jaliscotechweek.com
 
-Currently, two official plugins are available:
+## 🧱 Estructura del Proyecto
+```
+src/
+├── assets/              # Imágenes, íconos y otros recursos estáticos
+├── components/          # Componentes reutilizables de UI
+│   ├── Countdown.jsx
+│   ├── Footer.jsx
+│   ├── HeadingCounter.jsx
+│   └── ...
+├── App.jsx              # Componente raíz
+├── main.jsx             # Punto de entrada
+└── index.css            # Estilos globales (Tailwind)
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Cómo correr el proyecto localmente
 
-## Expanding the ESLint configuration
+1. **Clona el repositorio**
+```bash
+git clone https://github.com/juanmcervantes/Jalisco_Tech_Week_Infra.git
+cd Jalisco_Tech_Week_Infra
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Instala dependencias**
+```bash
+npm install
+```
+
+3. **Inicia el servidor de desarrollo**
+```bash
+npm run dev
+```
+
+4. **Abre en tu navegador**
+```
+http://localhost:5173
+```
+
+## 🌍 Despliegue en Producción
+
+El sitio está desplegado en [Vercel](https://vercel.com) y vinculado con el dominio personalizado:  
+🔗 https://jaliscotechweek.com  
+
+Para actualizar la versión en producción:
+```bash
+git add .
+git commit -m "Tu mensaje"
+git push origin main
+```
+Vercel detectará automáticamente el cambio y desplegará la nueva versión.
+
+## 👥 Autores
+- Juan Cervantes – [@juanmcervantes](https://github.com/juanmcervantes)
+
+## 📄 Licencia
+MIT License. Feel free to fork and adapt for other community tech events.
