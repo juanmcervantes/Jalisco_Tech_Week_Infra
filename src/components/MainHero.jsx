@@ -1,33 +1,23 @@
 import * as React from 'react'
-import HeroJTW from '../assets/HeroJTW.png'
+import Desktop_HeroJTW from '../assets/JTW-HERO-1920x1080.jpg'
+import Tablet_HeroJTW from '../assets/JTW-HERO-1200x900.jpg'
+import Mobile_HeroJTW from '../assets/JTW-HERO-750x1334.jpg'
+
 
 function MainHero() {
-
-
-    return (
-        <>
-        <div
-  className="hero min-h-screen"
-  style={{
-    backgroundImage:
-      `url(${HeroJTW})`,
-  }}
->
- {/* <div className="hero-overlay"></div> */} 
-
- {/*} <div className="hero-content text-neutral-content text-center">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button className="btn btn-primary">Get Started</button>
+  return (
+    <div className="w-full h-screen relative overflow-hidden">
+      <picture>
+        <source media="(max-width: 768px)" srcSet={Mobile_HeroJTW} />
+        <source media="(max-width: 1024px)" srcSet={Tablet_HeroJTW} />
+        <img
+          src={Desktop_HeroJTW}
+          alt="Jalisco Tech Week Hero"
+          className="object-cover w-full h-full"
+        />
+      </picture>
     </div>
-  </div> */}
-</div> 
-        </>
-    )
+  )
 }
 
 export default MainHero
